@@ -5,9 +5,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Martin Stavrakov</title>
 </head>
 <body>
-    
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Martin
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="ri-home-line"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-settings-4-line"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#qualifications" class="nav__link">
+                            <i class="ri-book-open-line"></i> Qualifications
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="ri-briefcase-2-line"></i> Services
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="ri-pages-line"></i> Projects
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-chat-1-line"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                
+                <!-- close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-circle-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- theme change buttons -->
+                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- MAIN -->
+    <main class="main">
+<!-- HOME -->
+        <section class="home section" id="home">
+            <div class="home__container container grid section__border">
+                <div class="home__data grid">
+                    <h1 class="home__title">
+                        Hello, I'm Martin <br>
+                        Frontend Developer <br>
+                        Based in Surrey <br>
+                    </h1>
+
+                    <div class="home__blob grid">
+                        <div class="home__profile">
+                            <img src="./images/IMG_6381.jpeg" alt="home profile">
+                        </div>
+
+                        <!-- <img src="./images/shape-wawes.svg" alt="" class="home__shape-wawes">
+                        <img src="./images/shape-circle.svg" alt="" class="home__shape-circle"> -->
+                    </div>
+
+                    <ul class="home__social">
+                        <a href="https://www.linkedin.com/in/martin-stavrakov-7b1625199/" title="LinkedIn" target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="https://github.com/m-stavrakov" title="GitHub" target="_blank" class="home__social-link">
+                            <i class="ri-github-fill"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/m.stavrakov98/" title="Instagram" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </ul>
+                </div>
+
+<!-- HOME INFO 1 -->
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            BIOGRAPHY
+                        </h3>
+
+                        <p class="home__info-description">
+                            Hi, I'm Martin, Frontend Developer.
+                            Passionate about building beautiful and 
+                            functional web pages. Based in Surrey.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            CONTACT
+                        </h3>
+
+                        <p class="home__info-description">
+                            Surrey, United Kingdom <br>
+                            m.stavrakov@gmail.com <br>
+                            +44 7523632239 <br>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            Services
+                        </h3>
+
+                        <p class="home__info-description">
+                            Web Development <br>
+                            Testing & Performance Tuning <br>
+                            Front End Architecture & Design <br>
+                        </p>
+                    </div>
+                </div>
+
+<!-- HOME INFO 2 -->
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            EXPERIENCE
+                        </h3>
+
+                        <p class="home__info-number">
+                            NONE
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPLETE PROJECTS
+                        </h3>
+
+                        <p class="home__info-number">
+                            NONE
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPANIES WORKED
+                        </h3>
+
+                        <p class="home__info-number">
+                            NONE
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
 </body>
 </html>
