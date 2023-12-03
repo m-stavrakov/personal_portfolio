@@ -239,7 +239,7 @@ body.dark-theme{
 }
 
 .nav__list{
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(5, max-content);
     justify-content: center;
     gap: 2rem 3rem;
 }
@@ -525,59 +525,6 @@ body.dark-theme{
     margin-bottom: 1.75rem;
 }
 
-/* SERVICES */
-.services__container{
-    row-gap: 2.5rem;
-    justify-content: center;
-}
-
-.services__card{
-    position: relative;
-    width: 228px;
-    height: 322px;
-    background-color: var(--container-color);
-    text-align: center;
-    padding: 3.5rem 1rem;
-    border-radius: 7.25rem;
-    transition: background .4s;
-}
-
-.services__card i{
-    display: block;
-    font-size: 2rem;
-    color: var(--title-color);
-    margin-bottom: .75rem;
-    transition: transform .8s;
-}
-
-.services__title{
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
-    margin-bottom: 1.5rem;
-}
-
-.services__border{
-    width: 248px;
-    height: 342px;
-    border: 1.8px solid var(--text-color-light);
-    border-radius: 7.75rem;
-    position: absolute;
-    inset: 0;
-    left: -10px;
-    margin: auto;
-    z-index: -1;
-    transition: opacity .6s;
-    opacity: 0;
-}
-
-.services__card:hover i{
-    transform: rotateY(360deg);
-}
-
-.services__card:hover .services__border{
-    opacity: 1;
-}
-
 /* PROJECTS */
 .projects__container{
     overflow: initial;
@@ -592,6 +539,7 @@ body.dark-theme{
     width: 250px;
     border-radius: .75rem;
     margin-bottom: 1.25rem;
+    margin: 0 auto;
 }
 
 .projects__subtitle{
@@ -971,7 +919,7 @@ body.dark-theme{
         padding-right: 0;
     }
 
-    .skills__container,
+    
     .qualification__container,
     .services__container,
     .contact__container{
@@ -1019,6 +967,7 @@ body.dark-theme{
         column-gap: 3rem;
         margin-inline: 1.5rem;
         padding: 0;
+        display: flex;
     }
 
     .nav__link i,
@@ -1213,7 +1162,15 @@ body.dark-theme{
     }
 
     .projects__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
         width: 900px;
+    }
+
+    .projects__content{
+        width: 100%;
     }
 
     .projects__container .swiper-button-prev,
@@ -1234,8 +1191,12 @@ body.dark-theme{
     }
 
     .projects__img{
-        width: 320px;
+        /* width: 320px; */
+        width: 80%;
+        height: auto;
+        display: block;
         margin-bottom: 2rem;
+
     }
 
     .contact__title{
