@@ -893,7 +893,7 @@ body.dark-theme{
     }
 
     .projects__container .swiper-button-next{
-        right: 1rem;
+        right: 2rem;
     }
 }
 
@@ -1192,11 +1192,16 @@ body.dark-theme{
 
     .projects__img{
         /* width: 320px; */
-        width: 80%;
+        width: 87%;
         height: auto;
         display: block;
         margin-bottom: 2rem;
 
+    }
+
+    .projects__description {
+        width: 87%;
+        margin: auto;
     }
 
     .contact__title{
